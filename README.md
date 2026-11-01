@@ -34,26 +34,6 @@ limitations under the License.
     <a href="https://zenodo.org/badge/latestdoi/155220641"><img src="https://zenodo.org/badge/155220641.svg" alt="DOI"></a>
 </p>
 
-<h4 align="center">
-    <p>
-        <b>English</b> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_zh-hans.md">简体中文</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_zh-hant.md">繁體中文</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_ko.md">한국어</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_es.md">Español</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_ja.md">日本語</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_hd.md">हिन्दी</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_ru.md">Русский</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_pt-br.md">Português</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_te.md">తెలుగు</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_fr.md">Français</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_de.md">Deutsch</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_vi.md">Tiếng Việt</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_ar.md">العربية</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_ur.md">اردو</a> |
-        <a href="https://github.com/huggingface/transformers/blob/main/i18n/README_bn.md">বাংলা</a> |
-    </p>
-</h4>
 
 <h3 align="center">
     <p>State-of-the-art pretrained models for inference and training</p>
@@ -210,112 +190,7 @@ pipeline(
 
 </details>
 
-## Why should I use Transformers?
 
-1. Easy-to-use state-of-the-art models:
-    - High performance on natural language understanding & generation, computer vision, audio, video, and multimodal tasks.
-    - Low barrier to entry for researchers, engineers, and developers.
-    - Few user-facing abstractions with just three classes to learn.
-    - A unified API for using all our pretrained models.
-
-1. Lower compute costs, smaller carbon footprint:
-    - Share trained models instead of training from scratch.
-    - Reduce compute time and production costs.
-    - Dozens of model architectures with 1M+ pretrained checkpoints across all modalities.
-
-1. Choose the right framework for every part of a models lifetime:
-    - Train state-of-the-art models in 3 lines of code.
-    - Move a single model between PyTorch/JAX/TF2.0 frameworks at will.
-    - Pick the right framework for training, evaluation, and production.
-
-1. Easily customize a model or an example to your needs:
-    - We provide examples for each architecture to reproduce the results published by its original authors.
-    - Model internals are exposed as consistently as possible.
-    - Model files can be used independently of the library for quick experiments.
-
-<a target="_blank" href="https://huggingface.co/enterprise">
-    <img alt="Hugging Face Enterprise Hub" src="https://github.com/user-attachments/assets/247fb16d-d251-4583-96c4-d3d76dda4925">
-</a><br>
-
-## Why shouldn't I use Transformers?
-
-- This library is not a modular toolbox of building blocks for neural nets. The code in the model files is not refactored with additional abstractions on purpose, so that researchers can quickly iterate on each of the models without diving into additional abstractions/files.
-- The training API is optimized to work with PyTorch models provided by Transformers. For generic machine learning loops, you should use another library like [Accelerate](https://huggingface.co/docs/accelerate).
-- The [example scripts](https://github.com/huggingface/transformers/tree/main/examples) are only *examples*. They may not necessarily work out-of-the-box on your specific use case and you'll need to adapt the code for it to work.
-
-## 100 projects using Transformers
-
-Transformers is more than a toolkit to use pretrained models, it's a community of projects built around it and the
-Hugging Face Hub. We want Transformers to enable developers, researchers, students, professors, engineers, and anyone
-else to build their dream projects.
-
-In order to celebrate Transformers 100,000 stars, we wanted to put the spotlight on the
-community with the [awesome-transformers](./awesome-transformers.md) page which lists 100
-incredible projects built with Transformers.
-
-If you own or use a project that you believe should be part of the list, please open a PR to add it!
-
-## Example models
-
-You can test most of our models directly on their [Hub model pages](https://huggingface.co/models).
-
-Expand each modality below to see a few example models for various use cases.
-
-<details>
-<summary>Audio</summary>
-
-- Audio classification with [Whisper](https://huggingface.co/openai/whisper-large-v3-turbo)
-- Automatic speech recognition with [Moonshine](https://huggingface.co/UsefulSensors/moonshine)
-- Keyword spotting with [Wav2Vec2](https://huggingface.co/superb/wav2vec2-base-superb-ks)
-- Speech to speech generation with [Moshi](https://huggingface.co/kyutai/moshiko-pytorch-bf16)
-- Text to audio with [MusicGen](https://huggingface.co/facebook/musicgen-large)
-- Text to speech with [Bark](https://huggingface.co/suno/bark)
-
-</details>
-
-<details>
-<summary>Computer vision</summary>
-
-- Automatic mask generation with [SAM](https://huggingface.co/facebook/sam-vit-base)
-- Depth estimation with [DepthPro](https://huggingface.co/apple/DepthPro-hf)
-- Image classification with [DINO v2](https://huggingface.co/facebook/dinov2-base)
-- Keypoint detection with [SuperPoint](https://huggingface.co/magic-leap-community/superpoint)
-- Keypoint matching with [SuperGlue](https://huggingface.co/magic-leap-community/superglue_outdoor)
-- Object detection with [RT-DETRv2](https://huggingface.co/PekingU/rtdetr_v2_r50vd)
-- Pose Estimation with [VitPose](https://huggingface.co/usyd-community/vitpose-base-simple)
-- Universal segmentation with [OneFormer](https://huggingface.co/shi-labs/oneformer_ade20k_swin_large)
-- Video classification with [VideoMAE](https://huggingface.co/MCG-NJU/videomae-large)
-
-</details>
-
-<details>
-<summary>Multimodal</summary>
-
-- Audio or text to text with [Qwen2-Audio](https://huggingface.co/Qwen/Qwen2-Audio-7B)
-- Document question answering with [LayoutLMv3](https://huggingface.co/microsoft/layoutlmv3-base)
-- Image or text to text with [Qwen-VL](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct)
-- Image captioning [BLIP-2](https://huggingface.co/Salesforce/blip2-opt-2.7b)
-- OCR-based document understanding with [GOT-OCR2](https://huggingface.co/stepfun-ai/GOT-OCR-2.0-hf)
-- Table question answering with [TAPAS](https://huggingface.co/google/tapas-base)
-- Unified multimodal understanding and generation with [Emu3](https://huggingface.co/BAAI/Emu3-Gen)
-- Vision to text with [Llava-OneVision](https://huggingface.co/llava-hf/llava-onevision-qwen2-0.5b-ov-hf)
-- Visual question answering with [Llava](https://huggingface.co/llava-hf/llava-1.5-7b-hf)
-- Visual referring expression segmentation with [Kosmos-2](https://huggingface.co/microsoft/kosmos-2-patch14-224)
-
-</details>
-
-<details>
-<summary>NLP</summary>
-
-- Masked word completion with [ModernBERT](https://huggingface.co/answerdotai/ModernBERT-base)
-- Named entity recognition with [Gemma](https://huggingface.co/google/gemma-2-2b)
-- Question answering with [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)
-- Summarization with [BART](https://huggingface.co/facebook/bart-large-cnn)
-- Translation with [T5](https://huggingface.co/google-t5/t5-base)
-- Text generation with [Llama](https://huggingface.co/meta-llama/Llama-3.2-1B)
-- Text classification with [Qwen](https://huggingface.co/Qwen/Qwen2.5-0.5B)
-
-</details>
 
 ## Citation
 
